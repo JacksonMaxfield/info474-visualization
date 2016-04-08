@@ -1,0 +1,78 @@
+/* Variables */
+$teal: #4EC4A3;
+$red: #F74A71;
+$dark-grey: #4B595E;
+$blue: #4AC9F7;
+$tan: #CB8984;
+
+body {
+  margin: 0px;
+  font: sans-serif;
+}
+
+#header-bar {
+  height: 60px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  text-align: center;
+  vertical-align: middle;
+  line-height: 60px;
+
+  background: white;
+}
+
+#page-title {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-button {
+  width: 40px;
+  height: 40px;
+
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+
+  background: white;
+  border: 5px solid;
+  border-radius: 50%;
+  margin: 0 10px 0 10px;
+}
+
+#vis-1-button {
+  border-color: $teal;
+}
+
+#vis-2-button {
+  border-color: $red;
+}
+
+#vis-3-button {
+  border-color: $blue;
+}
+
+.plate {
+  height: 600px;
+  width: 100%;
+}
+
+#vis-1 {
+  background: $teal;
+}
+
+#vis-2 {
+  background: $red;
+}
+
+#vis-3 {
+  background: $blue;
+}

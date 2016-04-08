@@ -1,3 +1,57 @@
+/* Variables */
+body {
+  margin: 0px;
+  font: sans-serif; }
 
+#header-bar {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 60px;
+  background: white; }
+
+#page-title {
+  margin: 0; }
+
+nav {
+  display: flex;
+  align-items: center; }
+
+.nav-button {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  background: white;
+  border: 5px solid;
+  border-radius: 50%;
+  margin: 0 10px 0 10px; }
+
+#vis-1-button {
+  border-color: #4EC4A3; }
+
+#vis-2-button {
+  border-color: #F74A71; }
+
+#vis-3-button {
+  border-color: #4AC9F7; }
+
+.plate {
+  height: 600px;
+  width: 100%; }
+
+#vis-1 {
+  background: #4EC4A3; }
+
+#vis-2 {
+  background: #F74A71; }
+
+#vis-3 {
+  background: #4AC9F7; }
 
 /*# sourceMappingURL=main-style.css.map */

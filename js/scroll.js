@@ -4,16 +4,9 @@ $(document).ready(function() {
 
 	    var target = this.hash;
 	    var $target = $(target);
-		  var x = $(window).width();
 
-			if (x < 800) {
-				$('html, body').stop().animate( {
-		        'scrollTop': $target.offset().top - 120
-		    }, 800, 'swing');
-	    } else {
-				$('html, body').stop().animate( {
-		        'scrollTop': $target.offset().top
-		    }, 800, 'swing');
-			}
+			$('html, body').stop().animate( {
+					'scrollTop': $target.offset().top - 59
+			}, 800, 'swing');
 	});
 });

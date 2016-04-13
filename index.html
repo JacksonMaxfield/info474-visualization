@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<title>The Wonder Drugs</title>
+		<link rel="icon" href="resources/logo.png">
+		<link href="style/main-style.css" type="text/css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+		<script src="js/scroll.js"></script>
+		<!--<script src="js/mobile-nav.js"></script>-->
+	</head>
+
+	<body>
+    <div id="body-container">
+      <div id="header-bar">
+        <h1 id="page-title">The&nbsp;Wonder&nbsp;Drugs</h1>
+        <nav>
+          <a href="#vis-1"><div id="vis-1-button" class="nav-button">1</div></a>
+          <a href="#vis-2"><div id="vis-2-button" class="nav-button">2</div></a>
+          <a href="#vis-3"><div id="vis-3-button" class="nav-button">3</div></a>
+        </nav>
+      </div>
+			<div id="content-container">
+				<div id="vis-1" class="plate">
+					<span class="section-title" id="vis-1-title">Which Antibiotic Has The Highest MIC Scores:</span>
+					<div id="data-vis-1" class="actual-data-vis">
+							<script src="js/plot-1.js"></script>
+					</div>
+					<div class="ctnt-txt-ctnr">
+						<p class="content-text">
+							Coming into this data I didn't have any real idea as to what it might indicate. What do the
+							MIC scores mean and how much do they vary across the different antibiotics. So my first
+							specific question was:
+
+							<br><br><em>Which antibiotic has the highest average scores across the various
+							bacterial infections?</em><br><br>
+
+							This is a decent first question to ask. It allows the viewer to quickly understand
+							that Penicilin is multiple times better than Streptomycin or Neomycin for many of the
+							bacterial infections.
+						</p>
+					</div>
+				</div>
+				<div id="vis-2" class="plate">
+					<span class="section-title" id="vis-2-title">Does Positive Gram Staining Mean Better Results:</span>
+					<div id="data-vis-2" class="actual-data-vis">
+						<script src="js/plot-2.js"></script>
+					</div>
+					<div class="ctnt-txt-ctnr">
+						<p class="content-text">
+							Etiam ex neque, dignissim sed dignissim sit amet, facilisis at eros. Etiam
+							dolor enim, viverra at lorem in, mollis accumsan nulla. Suspendisse potenti.
+							Ut sed lorem tincidunt, bibendum ligula ac, sagittis tellus. Maecenas dictum
+							augue diam, vitae lacinia sem aliquam consequat. Mauris et velit vitae arcu
+							ullamcorper tincidunt. Nulla cursus ornare hendrerit. Maecenas non mi ut neque
+							luctus sodales. Quisque egestas nisl id augue venenatis mollis. Donec ac nisi
+							in sapien eleifend auctor. Maecenas volutpat mauris nec lorem venenatis porttitor.
+							Etiam bibendum lacinia pharetra. Etiam dapibus lacus sed tellus egestas fringilla.
+							<br><br>
+							Nullam maximus elementum velit, quis molestie velit efficitur nec. Praesent
+							elit lorem, varius sit amet sapien eu, posuere condimentum diam. In iaculis
+							magna in sapien molestie, sit amet porta lectus gravida. Aliquam eget
+							imperdiet nibh. Sed blandit tortor eget enim ultricies lobortis.
+							Cras convallis pulvinar nisi id fermentum. Sed auctor sodales quam.
+							Suspendisse consectetur ex leo, et molestie libero viverra id. Donec
+							ultrices, dui et tempor euismod, libero felis rutrum mi, id tincidunt
+							orci dolor aliquam augue. Vestibulum dignissim purus rhoncus, lobortis
+							augue sed, scelerisque ex. In non tempor dui, id posuere massa. Etiam eget
+							euismod neque.
+						</p>
+					</div>
+				</div>
+				<div id="vis-3" class="plate">
+					<span class="section-title" id="vis-3-title">Design Three:</span>
+					<div id="data-vis-3" class="actual-data-vis">
+
+					</div>
+					<div class="ctnt-txt-ctnr">
+						<p class="content-text">
+							Etiam ex neque, dignissim sed dignissim sit amet, facilisis at eros. Etiam
+							dolor enim, viverra at lorem in, mollis accumsan nulla. Suspendisse potenti.
+							Ut sed lorem tincidunt, bibendum ligula ac, sagittis tellus. Maecenas dictum
+							augue diam, vitae lacinia sem aliquam consequat. Mauris et velit vitae arcu
+							ullamcorper tincidunt. Nulla cursus ornare hendrerit. Maecenas non mi ut neque
+							luctus sodales. Quisque egestas nisl id augue venenatis mollis. Donec ac nisi
+							in sapien eleifend auctor. Maecenas volutpat mauris nec lorem venenatis porttitor.
+							Etiam bibendum lacinia pharetra. Etiam dapibus lacus sed tellus egestas fringilla.
+							<br><br>
+							Nullam maximus elementum velit, quis molestie velit efficitur nec. Praesent
+							elit lorem, varius sit amet sapien eu, posuere condimentum diam. In iaculis
+							magna in sapien molestie, sit amet porta lectus gravida. Aliquam eget
+							imperdiet nibh. Sed blandit tortor eget enim ultricies lobortis.
+							Cras convallis pulvinar nisi id fermentum. Sed auctor sodales quam.
+							Suspendisse consectetur ex leo, et molestie libero viverra id. Donec
+							ultrices, dui et tempor euismod, libero felis rutrum mi, id tincidunt
+							orci dolor aliquam augue. Vestibulum dignissim purus rhoncus, lobortis
+							augue sed, scelerisque ex. In non tempor dui, id posuere massa. Etiam eget
+							euismod neque.
+						</p>
+					</div>
+				</div>
+			</div>
+    </div>
+	</body>
+</html>

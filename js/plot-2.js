@@ -1,3 +1,4 @@
+/* Traces */
 var trace1 = {
   x: ['Penicilin', 'Streptomycin', 'Neomycin'],
   y: [0.001, 0.01, 0.007],
@@ -47,16 +48,17 @@ var trace7 = {
   type: 'bar'
 };
 
+/* Selected Traces */
 var data = [trace1, trace2, trace3, trace4, trace5, trace6, trace7];
 
+/* Layout */
 var layout = {
-  barmode: 'group',
-  title: 'MIC of Penicilin, Streptomycin, and Neomycin (Gram-Staining: Positive)',
-  hovermode: 'closest',
-  legend: {
+  barmode: 'group', //grouped bar chart
+  title: 'MIC Scores against Positive Gram-Staining Bacterial Infections',
+  legend: { //position of legend
     x: 100,
-    y: 1
+    y: 0.4
   }
 };
 
-Plotly.newPlot('data-vis-2', data, layout);
+Plotly.newPlot('data-vis-2', data, layout, {staticPlot: true}); //put the plot in 'data-vis-2'

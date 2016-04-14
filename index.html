@@ -8,7 +8,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 		<script src="js/scroll.js"></script>
-		<!--<script src="js/mobile-nav.js"></script>-->
 	</head>
 
 	<body>
@@ -23,22 +22,45 @@
       </div>
 			<div id="content-container">
 				<div id="vis-1" class="plate">
-					<span class="section-title" id="vis-1-title">Which Antibiotic Has The Highest MIC Scores:</span>
+					<span class="section-title" id="vis-1-title">Anitbiotics and MIC Scores:</span>
 					<div id="data-vis-1" class="actual-data-vis">
 							<script src="js/plot-1.js"></script>
 					</div>
 					<div class="ctnt-txt-ctnr">
 						<p class="content-text">
-							Coming into this data I didn't have any real idea as to what it might indicate. What do the
-							MIC scores mean and how much do they vary across the different antibiotics. So my first
+							Coming into this dataset I didn't have any real idea as to what it might indicate. What do the
+							MIC scores mean and how much do they vary across the different antibiotics? So my first
 							specific question was:
 
-							<br><br><em>Which antibiotic has the highest average scores across the various
+							<br><br><em>Which antibiotic has the highest average MIC scores across the various
 							bacterial infections?</em><br><br>
 
-							This is a decent first question to ask. It allows the viewer to quickly understand
-							that Penicilin is multiple times better than Streptomycin or Neomycin for many of the
-							bacterial infections.
+							This is a good first question to ask as it allows the viewer to quickly understand
+							that Penicilin is multiple times better than Streptomycin and Neomycin for many of the
+							bacterial infections. By this I mean, it intuitively shows that Penicilin has high scores
+							which, are usually associated with good performance.
+							<br><br>
+							I choose to rely on vertical length judgements for this question primarly because
+							of how well they showed the drastic differences between the three antibiotics.
+							The question of which has the highest average scores across the various bacterial infections
+							is answered very quickly by looking at the chart and seeing the massive differences
+							between the three drugs many vertical length judgements.
+							<br><br>
+							I also believe that there is sometimes a need to be less distint in the visualization.
+							By this I mean, while it is obvious that Penicilin performs drastically better than the
+							other antibiotics, it is also harder to understand much of the data from
+							Streptomycin and Neomycin. This is once again because of the choice of length judgements as the
+							primary elementary task for the viewer. I didn't want the viewer to try to dive into this
+							data too much, I wanted them to look at the visualization, and ask more questions. By
+							leaving a lot of data as somewhat illegible it forces the viewer to want to find out more
+							and continue to ask questions.
+							<br><br>
+							One of the design questions I did ask myself multiple times however, was the importance of
+							a legend. I felt that it wasn't needed as there was so much data, it felt a bit overbearing
+							and from an understanding of the data, it wasn't needed because it would go against my
+							reasoning for the visualization in the first place. I wanted a visualization that was
+							easy to look at and get a general understanding of the data, and more importantly to
+							encourage further questions.
 						</p>
 					</div>
 				</div>
@@ -49,54 +71,65 @@
 					</div>
 					<div class="ctnt-txt-ctnr">
 						<p class="content-text">
-							Etiam ex neque, dignissim sed dignissim sit amet, facilisis at eros. Etiam
-							dolor enim, viverra at lorem in, mollis accumsan nulla. Suspendisse potenti.
-							Ut sed lorem tincidunt, bibendum ligula ac, sagittis tellus. Maecenas dictum
-							augue diam, vitae lacinia sem aliquam consequat. Mauris et velit vitae arcu
-							ullamcorper tincidunt. Nulla cursus ornare hendrerit. Maecenas non mi ut neque
-							luctus sodales. Quisque egestas nisl id augue venenatis mollis. Donec ac nisi
-							in sapien eleifend auctor. Maecenas volutpat mauris nec lorem venenatis porttitor.
-							Etiam bibendum lacinia pharetra. Etiam dapibus lacus sed tellus egestas fringilla.
+							Now that the viewer has a bit of insight into the data and what it means, they can start
+							to ask questions that might give more understanding of the data. My next question for
+							the data:
+
+							<br><br><em>If we looked only at the scores for bacterial infections that
+							show positive to gram-staining, how would the data differ?</em><br><br>
+
+							Similar to the first question, this question gives quick insight into how the three
+							different antibiotics may function. From this visualization we see that, unlike the
+							previous, Streptomycin and Neomycin perform much better than Penicilin
+							when the bacterial infection shows positive to the gram-staining procedure.
 							<br><br>
-							Nullam maximus elementum velit, quis molestie velit efficitur nec. Praesent
-							elit lorem, varius sit amet sapien eu, posuere condimentum diam. In iaculis
-							magna in sapien molestie, sit amet porta lectus gravida. Aliquam eget
-							imperdiet nibh. Sed blandit tortor eget enim ultricies lobortis.
-							Cras convallis pulvinar nisi id fermentum. Sed auctor sodales quam.
-							Suspendisse consectetur ex leo, et molestie libero viverra id. Donec
-							ultrices, dui et tempor euismod, libero felis rutrum mi, id tincidunt
-							orci dolor aliquam augue. Vestibulum dignissim purus rhoncus, lobortis
-							augue sed, scelerisque ex. In non tempor dui, id posuere massa. Etiam eget
-							euismod neque.
+							Once again I used a grouped bar chart and the viewers elementary perceptual task of
+							vertical length for this visualization. This time however I used it because I thought
+							it was a good way to show actual data. The data points and values are in a range tight
+							enough that the viewer can understand the scale of difference between the different
+							antibiotics much better.
+							<br><br>
+							Much like in the first visualization, a secondary reason for the use of a grouped bar
+							chart, was to allow the viewer an easy way to understand the data. The vertical judgements
+							also create somewhat of a proximity perception. This was intentional because I wanted to
+							further have the viewer understand that Penicilin was a different type of antibiotic than
+							Streptomycin and Neomycin.
+							<br><br>
+							Unlike the first visualization I choose to keep the legend for this one mainly because
+							the data is much more specific, giving the viewer a legend allows them, if they want to,
+							to see each data point.
 						</p>
 					</div>
 				</div>
 				<div id="vis-3" class="plate">
-					<span class="section-title" id="vis-3-title">Design Three:</span>
+					<span class="section-title" id="vis-3-title">MIC Scores from Neomycin:</span>
 					<div id="data-vis-3" class="actual-data-vis">
-
+						<script src="js/plot-3.js"></script>
 					</div>
 					<div class="ctnt-txt-ctnr">
 						<p class="content-text">
-							Etiam ex neque, dignissim sed dignissim sit amet, facilisis at eros. Etiam
-							dolor enim, viverra at lorem in, mollis accumsan nulla. Suspendisse potenti.
-							Ut sed lorem tincidunt, bibendum ligula ac, sagittis tellus. Maecenas dictum
-							augue diam, vitae lacinia sem aliquam consequat. Mauris et velit vitae arcu
-							ullamcorper tincidunt. Nulla cursus ornare hendrerit. Maecenas non mi ut neque
-							luctus sodales. Quisque egestas nisl id augue venenatis mollis. Donec ac nisi
-							in sapien eleifend auctor. Maecenas volutpat mauris nec lorem venenatis porttitor.
-							Etiam bibendum lacinia pharetra. Etiam dapibus lacus sed tellus egestas fringilla.
+							What if the viewer is interested in only one type of antibiotic?
+
+							<br><br><em>What are the MIC scores for only Neomycin?</em><br><br>
+
+							Unlike the previous two visualizations, I used a dot chart for this question.
+							In a similar fashion to a bar chart, I have broken up this data categorically for each
+							of the different bacterial infections, and then assigned the appropriate y-value to the
+							associated MIC score for Neomycin used on the bacterium. I have also assigned color to
+							the differing type of bacterium, whether it can be gram-stained or not.
 							<br><br>
-							Nullam maximus elementum velit, quis molestie velit efficitur nec. Praesent
-							elit lorem, varius sit amet sapien eu, posuere condimentum diam. In iaculis
-							magna in sapien molestie, sit amet porta lectus gravida. Aliquam eget
-							imperdiet nibh. Sed blandit tortor eget enim ultricies lobortis.
-							Cras convallis pulvinar nisi id fermentum. Sed auctor sodales quam.
-							Suspendisse consectetur ex leo, et molestie libero viverra id. Donec
-							ultrices, dui et tempor euismod, libero felis rutrum mi, id tincidunt
-							orci dolor aliquam augue. Vestibulum dignissim purus rhoncus, lobortis
-							augue sed, scelerisque ex. In non tempor dui, id posuere massa. Etiam eget
-							euismod neque.
+							The main reason for forming a dot chart instead of a bar chart was because I felt that
+							because there are many points that are so close to zero in this specific dataset, using
+							specific points allows the viewer to visually see that, while it Neomycin was tested on
+							the bacterium, it didn't perform well. Whereas, in a bar chart, viewers cannot visually
+							see the bar of data.
+							<br><br>
+							This dot chart forces the viewer to once again make vertical length judgements, and I
+							felt this was once again the best way to communicate the information. Additionally, combining
+							the length judgements with color perception, allows the viewer to quickly and easily understand
+							that Neomycin works well, if you could even say that, on only a few of the bacterial
+							infections, of which, they work best on bacterium that mark positive after the Gram-staining
+							process.
 						</p>
 					</div>
 				</div>

@@ -1,3 +1,4 @@
+/* Traces */
 var trace1 = {
   x: ['Penicilin', 'Streptomycin', 'Neomycin'],
   y: [870, 1, 1.6],
@@ -110,17 +111,16 @@ var trace16 = {
   type: 'bar'
 };
 
+/* Selected Traces */
 var data = [trace1, trace2, trace3, trace4, trace5, trace6, trace7, trace8,
   trace9, trace10, trace11, trace12, trace13, trace14, trace15, trace16];
 
+/* Layout */
 var layout = {
-  barmode: 'group',
+  barmode: 'group', //grouped bar chart
   title: 'MIC of Penicilin, Streptomycin, and Neomycin',
-  hovermode: 'closest',
-  legend: {
-    x: 100,
-    y: 1
-  }
+  hovermode: 'closest', //only show the closest data point on hover
+  showlegend: false //felt that the legend conflicted with the purpose of the visualization
 };
 
-Plotly.newPlot('data-vis-1', data, layout);
+Plotly.newPlot('data-vis-1', data, layout); //put the plot in 'data-vis-1'
